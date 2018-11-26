@@ -68,8 +68,8 @@ openshift_master_api_port=443
 openshift_master_console_port=443
 
 #Default:  openshift_master_cluster_method=native
-openshift_master_cluster_hostname=loadbalancer.c54c.iternal
-openshift_master_cluster_public_hostname=loadbalancer.c54c.example.opentlc.com
+openshift_master_cluster_hostname=loadbalancer1.c54c.internal
+openshift_master_cluster_public_hostname=loadbalancer1.c54c.example.opentlc.com
 openshift_master_default_subdomain=apps.c54c.example.opentlc.com
 #openshift_master_ca_certificate=
 openshift_master_overwrite_named_certificates=True
