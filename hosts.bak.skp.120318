@@ -68,9 +68,9 @@ openshift_master_api_port=443
 openshift_master_console_port=443
 
 #Default:  openshift_master_cluster_method=native
-openshift_master_cluster_hostname=loadbalancer1.mitzicom.internal
-openshift_master_cluster_public_hostname=loadbalancer1.mitzicom.com
-openshift_master_default_subdomain=apps.mitzicom.com
+openshift_master_cluster_hostname=loadbalancer1.c54c.internal
+openshift_master_cluster_public_hostname=loadbalancer1.c54c.example.opentlc.com
+openshift_master_default_subdomain=apps.c54c.example.opentlc.com
 #openshift_master_ca_certificate=
 openshift_master_overwrite_named_certificates=True
 
@@ -253,35 +253,35 @@ nodes
 nfs
 
 [lb]
-loadbalancer1.internal
+loadbalancer1.c54c.internal
 
 [masters]
-master1.internal
-master2.internal
-master3.internal
+master1.c54c.internal
+master2.c54c.internal
+master3.c54c.internal
 
 [etcd]
-master1.internal
-master2.internal
-master3.internal
+master1.c54c.internal
+master2.c54c.internal
+master3.c54c.internal
 
 [nodes]
 ## These are the masters
-master1.internal openshift_node_group_name='node-config-master' openshift_node_problem_detector_install=true
-master2.internal openshift_node_group_name='node-config-master' openshift_node_problem_detector_install=true
-master3.internal openshift_node_group_name='node-config-master' openshift_node_problem_detector_install=true
+master1.c54c.internal openshift_node_group_name='node-config-master' openshift_node_problem_detector_install=true
+master2.c54c.internal openshift_node_group_name='node-config-master' openshift_node_problem_detector_install=true
+master3.c54c.internal openshift_node_group_name='node-config-master' openshift_node_problem_detector_install=true
 
 ## These are infranodes
-infranode1.internal openshift_node_group_name='node-config-infra' openshift_node_problem_detector_install=true
-infranode2.internal openshift_node_group_name='node-config-infra' openshift_node_problem_detector_install=true
+infranode1.c54c.internal openshift_node_group_name='node-config-infra' openshift_node_problem_detector_install=true
+infranode2.c54c.internal openshift_node_group_name='node-config-infra' openshift_node_problem_detector_install=true
 
 ## These are regular nodes
-node1.internal openshift_node_group_name='node-config-compute' openshift_node_problem_detector_install=true
-node2.internal openshift_node_group_name='node-config-compute' openshift_node_problem_detector_install=true
-node3.internal openshift_node_group_name='node-config-compute' openshift_node_problem_detector_install=true
-node4.internal openshift_node_group_name='node-config-compute' openshift_node_problem_detector_install=true
+node1.c54c.internal openshift_node_group_name='node-config-compute' openshift_node_problem_detector_install=true
+node2.c54c.internal openshift_node_group_name='node-config-compute' openshift_node_problem_detector_install=true
+node3.c54c.internal openshift_node_group_name='node-config-compute' openshift_node_problem_detector_install=true
+node4.c54c.internal openshift_node_group_name='node-config-compute' openshift_node_problem_detector_install=true
 
 
 [nfs]
-support1.internal
+support1.c54c.internal
 
